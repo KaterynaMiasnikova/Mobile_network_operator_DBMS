@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="sample.ContrManager">
+  <tabs>
+    <Tab text="Main">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #B9B7F9;">
+               <children>
+                  <TableView fx:id="table_clients" layoutX="331.0" layoutY="77.0" prefHeight="514.0" prefWidth="907.0" />
+                  <Label layoutX="8.0" layoutY="2.0" text="Manager" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="160.0" fitWidth="144.0" layoutX="186.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../icons/smartphone (2).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="button_Exit" layoutX="13.0" layoutY="60.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="160.0" style="-fx-background-color: #48695E;" text="Exit" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button_Reload" layoutX="1079.0" layoutY="37.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="158.0" style="-fx-background-color: #48695E;" text="Refresh" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="739.0" layoutY="25.0" text="Clients:">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="138.0" text="Instrument" underline="true">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="combo_tarif" layoutX="22.0" layoutY="261.0" prefHeight="38.0" prefWidth="222.0" promptText="Tariff" style="-fx-background-color: #ffffff;" />
+                  <ComboBox fx:id="combo_lgota" layoutX="22.0" layoutY="332.0" prefHeight="38.0" prefWidth="222.0" promptText="Benefit" style="-fx-background-color: #ffffff;" />
+                  <Button fx:id="button_Apply" layoutX="24.0" layoutY="409.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="193.0" style="-fx-background-color: #48695E;" text="Submit" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="18.0" layoutY="183.0" prefHeight="70.0" prefWidth="279.0" text="If you want to change a customer's tariff or benefit, first select it in the table and then select the required data" textAlignment="JUSTIFY" wrapText="true" />
+                  <ImageView fitHeight="178.0" fitWidth="185.0" layoutX="28.0" layoutY="455.0">
+                     <image>
+                        <Image url="@../icons/computer (1).png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Reports and queries">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #B9B7F9;">
+               <children>
+                  <TableView fx:id="table_request" layoutX="571.0" layoutY="108.0" prefHeight="510.0" prefWidth="688.0" />
+                  <ComboBox fx:id="combo_request" layoutX="573.0" layoutY="40.0" prefHeight="38.0" prefWidth="683.0" promptText="Request" style="-fx-background-color: #48695E;" />
+                  <TextArea fx:id="textArea_report" layoutX="20.0" layoutY="231.0" prefHeight="386.0" prefWidth="520.0" promptText="Select the report you want to display" />
+                  <ComboBox fx:id="combo_report" layoutX="22.0" layoutY="155.0" prefHeight="38.0" prefWidth="330.0" promptText="Report" style="-fx-background-color: #48695E;" />
+                  <Button fx:id="button_Print" layoutX="430.0" layoutY="157.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="109.0" style="-fx-background-color: #48695E;" text="Print" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="22.0" layoutY="16.0" text="Manager" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="134.0" fitWidth="135.0" layoutX="417.0" layoutY="11.0">
+                     <image>
+                        <Image url="@../icons/clone.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="110.0" fitWidth="123.0" layoutX="263.0" layoutY="23.0">
+                     <image>
+                        <Image url="@../icons/computer (1).png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="22.0" layoutY="59.0" prefHeight="84.0" prefWidth="211.0" text="To see responses to queries or reports, select possible options from the drop-down list" textAlignment="JUSTIFY" wrapText="true" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
